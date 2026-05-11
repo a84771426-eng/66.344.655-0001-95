@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Política de Cookies: técnicos, analíticos e consentimento." />
+    <title>Cookies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;0,9..40,600;0,9..40,700&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page-title="Política de Cookies">
+    <header class="site-header">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span class="logo__text"
+            ><span data-bind="meta.nomePortal"></span
+            ><small class="logo__tagline" data-bind="meta.slogan"></small
+          ></span>
+        </a>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="visually-hidden">Abrir menu</span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Principal">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Início</a></li>
+            <li><a class="nav__link" href="sobre.html">Sobre</a></li>
+            <li><a class="nav__link" href="contato.html">Contato</a></li>
+            <li><a class="nav__link" href="privacidade.html">Privacidade</a></li>
+            <li><a class="nav__link" href="termos.html">Termos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="transparencia" aria-label="Transparência">
+      <div class="transparencia__inner">
+        <p class="transparencia__titulo" data-bind="transparencia.tituloFaixa"></p>
+        <div class="transparencia__track" role="list" data-transparencia-track></div>
+      </div>
+    </section>
+
+    <main>
+      <header class="page-hero">
+        <h1>Política de Cookies</h1>
+        <p>
+          Explicação sobre cookies técnicos e analíticos utilizados neste portal, em alinhamento com a LGPD e com a
+          transparência do controlador <span data-bind="empresa.razaoSocial"></span>.
+        </p>
+      </header>
+
+      <article class="prose">
+        <h2>1. O que são cookies</h2>
+        <p>
+          Cookies são pequenos arquivos armazenados no seu navegador que permitem reconhecer preferências, manter
+          sessões ou coletar informações estatísticas agregadas.
+        </p>
+
+        <h2>2. Cookies técnicos (essenciais)</h2>
+        <p>
+          Utilizamos cookies estritamente necessários ao funcionamento do site — por exemplo, para registrar sua
+          escolha no banner de cookies ou preferências básicas de navegação. Esses cookies não visam publicidade
+          comportamental.
+        </p>
+
+        <h2>3. Cookies analíticos (opcionais)</h2>
+        <p>
+          Se você aceitar no banner, podemos utilizar cookies ou tecnologias similares para entender, de forma
+          agregada, quais páginas são mais visitadas e como os leitores navegam. Isso ajuda a melhorar conteúdo e
+          desempenho. Você pode recusar analíticos no banner ou limpar cookies nas configurações do navegador.
+        </p>
+
+        <h2>4. Minimização e dados financeiros</h2>
+        <p>
+          Aplicamos o princípio da minimização: não solicitamos dados bancários ou financeiros neste portal. Cookies não
+          são usados para capturar número de cartão ou credenciais de pagamento.
+        </p>
+
+        <h2>5. Base legal</h2>
+        <p>
+          Cookies técnicos podem basear-se em interesse legítimo ou execução do serviço solicitado. Cookies analíticos
+          não essenciais dependem de consentimento, que pode ser revogado a qualquer momento.
+        </p>
+
+        <h2>6. Gestão no navegador</h2>
+        <p>
+          A maioria dos navegadores permite bloquear ou apagar cookies. Consulte a ajuda do Chrome, Firefox, Safari,
+          Edge ou outro que utilizar. O bloqueio de cookies técnicos pode afetar partes do site.
+        </p>
+
+        <h2>7. Contato</h2>
+        <p>
+          Dúvidas sobre cookies ou privacidade:
+          <a data-mailto="empresa.emailPrivacidade"><span data-bind="empresa.emailPrivacidade"></span></a> — CNPJ
+          <span data-bind="empresa.cnpj"></span>.
+        </p>
+
+        <p><strong>Última atualização:</strong> maio de 2026.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__grid">
+        <div>
+          <h2 class="footer__title" data-bind="meta.nomePortal"></h2>
+          <p class="footer__tagline" data-bind="meta.slogan"></p>
+          <p class="footer__legal">
+            <strong data-bind="empresa.razaoSocial"></strong><br />
+            CNPJ <span data-bind="empresa.cnpj"></span><br />
+            <span data-bind="empresa.enderecoLinha1"></span><br />
+            <span data-bind="empresa.enderecoLinha2"></span><br />
+            <a data-mailto="empresa.emailContato"><span data-bind="empresa.emailContato"></span></a>
+            · <a data-mailto="empresa.emailPrivacidade">Privacidade (e-mail)</a><br />
+            Tel. <span data-bind="empresa.telefone"></span> · Desde <span data-bind="empresa.anoFundacao"></span>
+          </p>
+        </div>
+        <div>
+          <h3 class="footer__subtitle">Mapa do site</h3>
+          <ul class="footer__list footer__list--plain">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="privacidade.html">Privacidade</a></li>
+            <li><a href="termos.html">Termos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="cookies.html">Política de Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__subtitle" data-bind="transparencia.tituloFaixa"></h3>
+          <ul class="footer__list" data-transparencia-footer></ul>
+        </div>
+      </div>
+      <p class="footer__bottom">
+        © <span data-year></span> <span data-bind="empresa.nomeFantasia"></span>. Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <script src="js/site.config.js"></script>
+    <script src="js/site.js"></script>
+  </body>
+</html>

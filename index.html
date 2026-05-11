@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portal editorial sobre mobilidade viária, OCR, pedágio eletrônico e Free Flow no Brasil — conteúdo educativo e independente."
+    />
+    <title>Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,600&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page-title="Início">
+    <header class="site-header">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span class="logo__text"
+            ><span data-bind="meta.nomePortal"></span
+            ><small class="logo__tagline" data-bind="meta.slogan"></small
+          ></span>
+        </a>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="visually-hidden">Abrir menu</span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Principal">
+          <ul class="nav__list">
+            <li><a class="nav__link is-active" href="index.html" aria-current="page">Início</a></li>
+            <li><a class="nav__link" href="sobre.html">Sobre</a></li>
+            <li><a class="nav__link" href="contato.html">Contato</a></li>
+            <li><a class="nav__link" href="privacidade.html">Privacidade</a></li>
+            <li><a class="nav__link" href="termos.html">Termos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="transparencia" aria-label="Transparência">
+      <div class="transparencia__inner">
+        <p class="transparencia__titulo" data-bind="transparencia.tituloFaixa"></p>
+        <div class="transparencia__track" role="list" data-transparencia-track></div>
+      </div>
+    </section>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__grid">
+          <div>
+            <p class="hero__kicker">Portal editorial · Mobilidade inteligente</p>
+            <h1 id="hero-title">Tecnologia viária e infraestrutura rodoviária no Brasil</h1>
+            <p class="hero__sub">
+              Conteúdo editorial e educativo sobre malha rodoviária, mobilidade, leitura automática de placas (OCR),
+              pedágios eletrônicos, tags e o modelo Free Flow — linguagem acessível, base técnica e caráter
+              exclusivamente informativo (não oficial, não financeiro, não governamental).
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#artigos">Artigos em destaque</a>
+              <a class="btn btn--secondary" href="sobre.html">Sobre o portal</a>
+            </div>
+          </div>
+          <aside class="hero__panel" aria-label="Resumo institucional">
+            <p class="hero__panel-title">Transparência</p>
+            <ul data-transparencia-footer class="hero-panel__list"></ul>
+          </aside>
+        </div>
+      </section>
+
+      <section aria-labelledby="stats-title">
+        <div class="section-head">
+          <h2 id="stats-title">Panorama em números e eixos</h2>
+          <p>Indicadores ilustrativos — não substituem estatísticas ou tarifas oficiais.</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <div class="stat-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M3 17h2l1-4h10l1 4h2l-1-10h-2l-1 4H7L6 7H4L3 17zm4.5-6h9l-.5-2h-8l-.5 2z"/></svg>
+            </div>
+            <p class="stat-card__value">~1,7 mi km</p>
+            <p class="stat-card__label">Ordem de grandeza da malha rodoviária no país (fontes oficiais agregadas).</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M5 15H3v4c0 1.1.9 2 2 2h4v-2H5v-4zM5 5h4V3H5c-1.1 0-2 .9-2 2v4h2V5zm14-2h-4v2h4v4h2V5c0-1.1-.9-2-2-2zm0 16h-4v2h4c1.1 0 2-.9 2-2v-4h-2v4zM12 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </div>
+            <p class="stat-card__value">OCR + ANPR</p>
+            <p class="stat-card__label">Leitura óptica de placas em arrecadação, auditoria e fiscalidade.</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M6 12c0-2 2-4 6-4s6 2 6 4v4H6v-4zm2 0c0 1 1.8 2 4 2s4-1 4-2-1.8-2-4-2-4 1-4 2zM4 18h16v2H4v-2z"/></svg>
+            </div>
+            <p class="stat-card__value">Concessões</p>
+            <p class="stat-card__label">Contratos com metas de investimento, operação e fiscalização por agências.</p>
+          </article>
+          <article class="stat-card">
+            <div class="stat-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M14 4l-4 4H4v8h6l4 4V4zm2 4.26v7.48c2.32-.66 4-2.8 4-5.37s-1.68-4.71-4-5.37z"/></svg>
+            </div>
+            <p class="stat-card__value">Free Flow</p>
+            <p class="stat-card__label">Cobrança sem cancela física em expansão no ecossistema rodoviário.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="artigos" aria-labelledby="artigos-title">
+        <div class="section-head">
+          <h2 id="artigos-title">Artigos em destaque</h2>
+          <p>Leituras introdutórias. Aprofunde nos eixos temáticos abaixo.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <p class="card__tag">Free Flow</p>
+            <h3 class="card__title"><a href="#sec-free-flow">Free Flow: o que muda na experiência do motorista</a></h3>
+            <p class="card__excerpt">
+              Cobrança por trecho com sensores, câmeras e cadastro — sem parada obrigatória no pórtico tradicional.
+            </p>
+            <a class="card__more" href="#sec-free-flow">Ir ao tema</a>
+          </article>
+          <article class="card">
+            <p class="card__tag">OCR</p>
+            <h3 class="card__title"><a href="#sec-ocr">OCR e leitura de placas: precisão e limites</a></h3>
+            <p class="card__excerpt">
+              Visão computacional, iluminação e padronização de placas impactam a confiabilidade da leitura automática.
+            </p>
+            <a class="card__more" href="#sec-ocr">Ir ao tema</a>
+          </article>
+          <article class="card">
+            <p class="card__tag">Infraestrutura</p>
+            <h3 class="card__title"><a href="#sec-concessoes">Concessões, ITS e tecnologia na operação</a></h3>
+            <p class="card__excerpt">
+              Contratos preveem níveis de serviço, investimento e sistemas inteligentes de monitoramento e informação.
+            </p>
+            <a class="card__more" href="#sec-concessoes">Ir ao tema</a>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="temas-title">
+        <div class="section-head">
+          <h2 id="temas-title">Eixos temáticos</h2>
+          <p>Free Flow, OCR, tags, concessões e infraestrutura — explicados de forma direta.</p>
+        </div>
+
+        <section class="topic-section" id="sec-free-flow">
+          <h2 class="topic-section__title">Free Flow</h2>
+          <p class="topic-section__text">
+            Modelo em que a cobrança ocorre sem cancelas: identificação por tag, câmeras (ANPR) e correlação de
+            passagens. Reduz filas físicas e exige cadastro correto, clareza de faturamento e canais de contestação
+            alinhados à regulação local. Este texto é educativo; regras e tarifas vigentes estão com cada operador.
+          </p>
+        </section>
+
+        <section class="topic-section" id="sec-ocr">
+          <h2 class="topic-section__title">OCR e leitura de placas</h2>
+          <p class="topic-section__text">
+            O reconhecimento óptico de caracteres transforma imagens de placas em texto para auditoria, conciliação e
+            fiscalização. Ângulo, sujeira, reflexo e velocidade são variáveis críticas; sistemas reais costumam combinar
+            múltiplas capturas e validações.
+          </p>
+        </section>
+
+        <section class="topic-section" id="sec-tags">
+          <h2 class="topic-section__title">Tags eletrônicas</h2>
+          <p class="topic-section__text">
+            Dispositivos RFID associados ao veículo permitem leitura em movimento em pedágios e, onde previsto, em
+            áreas urbanas. A interoperabilidade depende de acordos comerciais e regulatórios entre redes.
+          </p>
+        </section>
+
+        <section class="topic-section" id="sec-concessoes">
+          <h2 class="topic-section__title">Concessões rodoviárias</h2>
+          <p class="topic-section__text">
+            Contratos delegam investimento, manutenção e operação de trechos. Agências reguladoras fiscalizam
+            indicadores. Este portal explica conceitos; decisões oficiais e tarifas estão com órgãos e concessionárias.
+          </p>
+        </section>
+
+        <section class="topic-section" id="sec-infra">
+          <h2 class="topic-section__title">Infraestrutura viária</h2>
+          <p class="topic-section__text">
+            Pavimento, drenagem, sinalização e ITS (sistemas inteligentes de transporte) compõem a base física e digital
+            em que pedágio, segurança e informação ao motorista se apoiam.
+          </p>
+        </section>
+      </section>
+
+      <section aria-labelledby="conceitos-title">
+        <div class="section-head">
+          <h2 id="conceitos-title">Conceitos em cartões</h2>
+          <p>Termos frequentes na imprensa especializada e em manuais técnicos.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3 class="card__title">ANPR</h3>
+            <p class="card__excerpt">
+              Automatic Number Plate Recognition — fluxo de captura, detecção da placa e OCR, integrado a regras de
+              negócio e bases cadastrais quando aplicável.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Multilane free flow</h3>
+            <p class="card__excerpt">
+              Arquitetura com várias faixas tarifadas em paralelo, leitura lateral ou superior e classificação de
+              veículos para tarifa correta.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Interoperabilidade</h3>
+            <p class="card__excerpt">
+              Aceitação do mesmo meio de pagamento em redes distintas, quando contratado e tecnicamente homologado
+              entre operadores.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">ITS</h3>
+            <p class="card__excerpt">
+              Sistemas inteligentes de transporte: sensores, câmeras, painéis e software para gestão de tráfego,
+              incidentes e informação dinâmica.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="glossario-title">
+        <div class="section-head">
+          <h2 id="glossario-title">Glossário técnico</h2>
+          <p>Definições curtas para consulta rápida.</p>
+        </div>
+        <div class="card" style="padding-top: 8px; padding-bottom: 8px">
+          <dl class="glossary">
+            <div class="glossary__row">
+              <dt>OCR</dt>
+              <dd>Optical Character Recognition — extração de texto a partir de imagem.</dd>
+            </div>
+            <div class="glossary__row">
+              <dt>Pedágio eletrônico</dt>
+              <dd>Cobrança com identificação automática, sem pagamento manual em cabine.</dd>
+            </div>
+            <div class="glossary__row">
+              <dt>Free Flow</dt>
+              <dd>Cobrança sem barreira física no ponto de tarifação.</dd>
+            </div>
+            <div class="glossary__row">
+              <dt>TAG</dt>
+              <dd>Etiqueta eletrônica veicular para leitura por antenas em pórticos ou corredores.</dd>
+            </div>
+            <div class="glossary__row">
+              <dt>Concessão</dt>
+              <dd>Contrato de exploração de trecho com metas de investimento, operação e fiscalização.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section aria-labelledby="faq-title">
+        <div class="section-head">
+          <h2 id="faq-title">Perguntas frequentes</h2>
+          <p>Esclarecimentos sobre o papel deste portal. <a href="faq.html">Página completa de FAQ</a>.</p>
+        </div>
+        <div class="card" style="padding: 0 20px">
+          <div class="faq-block">
+            <h3 class="faq-block__q">Este portal é do governo ou de uma concessionária?</h3>
+            <p class="faq-block__a">
+              Não. Somos empresa privada e portal informativo independente, sem vínculo institucional com DETRAN, ANTT,
+              governos ou concessionárias. Não substituímos canais oficiais.
+            </p>
+            <h3 class="faq-block__q">Vocês oferecem cadastro de tag ou contestação de pedágio?</h3>
+            <p class="faq-block__a">
+              Não oferecemos serviços governamentais nem operacionais de arrecadação. Use sempre os canais da operadora
+              e dos órgãos competentes.
+            </p>
+            <h3 class="faq-block__q">O conteúdo substitui orientação jurídica ou regulatória?</h3>
+            <p class="faq-block__a">
+              Não. O material é educativo e pode ficar desatualizado. Para decisões com efeito legal ou financeiro,
+              consulte fontes oficiais e assessoria especializada.
+            </p>
+            <h3 class="faq-block__q">Como tratamos dados pessoais (LGPD)?</h3>
+            <p class="faq-block__a">
+              Aplicamos minimização: cookies técnicos e, se você consentir, métricas agregadas. Não coletamos dados
+              financeiros neste portal. Veja Privacidade e Cookies.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="quem-somos" aria-labelledby="quem-title">
+        <h2 id="quem-title">Quem somos</h2>
+        <p>
+          Equipe editorial e técnica focada em como a infraestrutura rodoviária e os sistemas de cobrança evoluem no
+          Brasil — com rigor de linguagem e transparência sobre nosso papel.
+        </p>
+        <p>
+          Não somos órgão público, não representamos operadoras e não comercializamos tags. Objetivo: reduzir
+          assimetria de informação entre o ecossistema da estrada e leitores curiosos ou profissionais.
+        </p>
+        <p class="quem-somos__cta"><a class="btn btn--secondary" href="faq.html">FAQ institucional</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__grid">
+        <div>
+          <h2 class="footer__title" data-bind="meta.nomePortal"></h2>
+          <p class="footer__tagline" data-bind="meta.slogan"></p>
+          <p class="footer__legal">
+            <strong data-bind="empresa.razaoSocial"></strong><br />
+            CNPJ <span data-bind="empresa.cnpj"></span><br />
+            <span data-bind="empresa.enderecoLinha1"></span><br />
+            <span data-bind="empresa.enderecoLinha2"></span><br />
+            <a data-mailto="empresa.emailContato"><span data-bind="empresa.emailContato"></span></a>
+            · <a data-mailto="empresa.emailPrivacidade">Privacidade (e-mail)</a><br />
+            Tel. <span data-bind="empresa.telefone"></span> · Desde <span data-bind="empresa.anoFundacao"></span>
+          </p>
+        </div>
+        <div>
+          <h3 class="footer__subtitle">Mapa do site</h3>
+          <ul class="footer__list footer__list--plain">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="privacidade.html">Privacidade</a></li>
+            <li><a href="termos.html">Termos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="cookies.html">Política de Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__subtitle" data-bind="transparencia.tituloFaixa"></h3>
+          <ul class="footer__list" data-transparencia-footer></ul>
+        </div>
+      </div>
+      <p class="footer__bottom">
+        © <span data-year></span> <span data-bind="empresa.nomeFantasia"></span>. Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <script src="js/site.config.js"></script>
+    <script src="js/site.js"></script>
+  </body>
+</html>

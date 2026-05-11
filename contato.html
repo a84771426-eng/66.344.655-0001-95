@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Fale com o portal: dúvidas editoriais, privacidade e sugestões de pauta." />
+    <title>Contato</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;0,9..40,600;0,9..40,700&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page-title="Contato">
+    <header class="site-header">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span class="logo__text"
+            ><span data-bind="meta.nomePortal"></span
+            ><small class="logo__tagline" data-bind="meta.slogan"></small
+          ></span>
+        </a>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="visually-hidden">Abrir menu</span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Principal">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Início</a></li>
+            <li><a class="nav__link" href="sobre.html">Sobre</a></li>
+            <li><a class="nav__link is-active" href="contato.html">Contato</a></li>
+            <li><a class="nav__link" href="privacidade.html">Privacidade</a></li>
+            <li><a class="nav__link" href="termos.html">Termos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="transparencia" aria-label="Transparência">
+      <div class="transparencia__inner">
+        <p class="transparencia__titulo" data-bind="transparencia.tituloFaixa"></p>
+        <div class="transparencia__track" role="list" data-transparencia-track></div>
+      </div>
+    </section>
+
+    <main>
+      <header class="page-hero">
+        <h1>Contato</h1>
+        <p>
+          Canal para mensagens editoriais, sugestões de pauta e assuntos relacionados a privacidade de dados. Não
+          utilizamos esta página para cadastro de tag, contestação de pedágio ou atendimento governamental.
+        </p>
+      </header>
+
+      <div class="contact-card">
+        <h2 class="section-head" style="margin-bottom: 8px"><span style="font-size: 1.1rem">Dados para contato</span></h2>
+        <dl>
+          <dt>E-mail</dt>
+          <dd><a data-mailto="empresa.emailContato"><span data-bind="empresa.emailContato"></span></a></dd>
+          <dt>Privacidade / LGPD</dt>
+          <dd><a data-mailto="empresa.emailPrivacidade"><span data-bind="empresa.emailPrivacidade"></span></a></dd>
+          <dt>Telefone</dt>
+          <dd><span data-bind="empresa.telefone"></span></dd>
+          <dt>Endereço</dt>
+          <dd>
+            <span data-bind="empresa.enderecoLinha1"></span><br />
+            <span data-bind="empresa.enderecoLinha2"></span>
+          </dd>
+          <dt>CNPJ / Razão social</dt>
+          <dd><span data-bind="empresa.cnpj"></span> — <span data-bind="empresa.razaoSocial"></span></dd>
+        </dl>
+      </div>
+
+      <article class="prose">
+        <h2>Formulário (cliente de e-mail)</h2>
+        <p>
+          Ao enviar, seu cliente de e-mail será aberto. O tratamento das mensagens segue a
+          <a href="privacidade.html">Política de Privacidade</a>.
+        </p>
+        <form id="form-contato">
+          <div class="form-row">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-row">
+            <label for="assunto">Assunto</label>
+            <input id="assunto" name="assunto" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Abrir e-mail</button>
+        </form>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__grid">
+        <div>
+          <h2 class="footer__title" data-bind="meta.nomePortal"></h2>
+          <p class="footer__tagline" data-bind="meta.slogan"></p>
+          <p class="footer__legal">
+            <strong data-bind="empresa.razaoSocial"></strong><br />
+            CNPJ <span data-bind="empresa.cnpj"></span><br />
+            <span data-bind="empresa.enderecoLinha1"></span><br />
+            <span data-bind="empresa.enderecoLinha2"></span><br />
+            <a data-mailto="empresa.emailContato"><span data-bind="empresa.emailContato"></span></a>
+            · <a data-mailto="empresa.emailPrivacidade">Privacidade (e-mail)</a><br />
+            Tel. <span data-bind="empresa.telefone"></span> · Desde <span data-bind="empresa.anoFundacao"></span>
+          </p>
+        </div>
+        <div>
+          <h3 class="footer__subtitle">Mapa do site</h3>
+          <ul class="footer__list footer__list--plain">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="privacidade.html">Privacidade</a></li>
+            <li><a href="termos.html">Termos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="cookies.html">Política de Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__subtitle" data-bind="transparencia.tituloFaixa"></h3>
+          <ul class="footer__list" data-transparencia-footer></ul>
+        </div>
+      </div>
+      <p class="footer__bottom">
+        © <span data-year></span> <span data-bind="empresa.nomeFantasia"></span>. Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <script src="js/site.config.js"></script>
+    <script src="js/site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Termos de uso do portal editorial." />
+    <title>Termos de uso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;0,9..40,600;0,9..40,700&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page-title="Termos de uso">
+    <header class="site-header">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span class="logo__text"
+            ><span data-bind="meta.nomePortal"></span
+            ><small class="logo__tagline" data-bind="meta.slogan"></small
+          ></span>
+        </a>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="visually-hidden">Abrir menu</span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Principal">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Início</a></li>
+            <li><a class="nav__link" href="sobre.html">Sobre</a></li>
+            <li><a class="nav__link" href="contato.html">Contato</a></li>
+            <li><a class="nav__link" href="privacidade.html">Privacidade</a></li>
+            <li><a class="nav__link is-active" href="termos.html">Termos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="transparencia" aria-label="Transparência">
+      <div class="transparencia__inner">
+        <p class="transparencia__titulo" data-bind="transparencia.tituloFaixa"></p>
+        <div class="transparencia__track" role="list" data-transparencia-track></div>
+      </div>
+    </section>
+
+    <main>
+      <header class="page-hero">
+        <h1>Termos de uso</h1>
+        <p>
+          Condições gerais de acesso e uso do site. Leitura recomendada junto à <a href="privacidade.html">Política de
+          Privacidade</a> e à <a href="cookies.html">Política de Cookies</a>.
+        </p>
+      </header>
+
+      <article class="prose">
+        <h2>1. Aceitação</h2>
+        <p>
+          Ao acessar ou utilizar este portal, você declara ter lido e compreendido estes Termos de Uso. Se não
+          concordar, interrompa o uso. O portal é mantido por <span data-bind="empresa.razaoSocial"></span>, CNPJ
+          <span data-bind="empresa.cnpj"></span>.
+        </p>
+
+        <h2>2. Objeto e natureza do serviço</h2>
+        <p>
+          O site oferece conteúdo editorial e educativo sobre mobilidade viária, infraestrutura, OCR, pedágio
+          eletrônico e temas correlatos. Não constitui consultoria jurídica, técnica ou regulatória, nem serviço
+          financeiro, bancário ou governamental.
+        </p>
+
+        <h2>3. Independência e limites</h2>
+        <p>
+          Empresa privada; portal informativo independente; não somos órgão do governo; não possuímos vínculo com
+          concessionárias, DETRAN, ANTT ou órgãos públicos. Não oferecemos serviços governamentais e não substituímos
+          canais oficiais. Para informações oficiais, consulte os órgãos e operadoras responsáveis.
+        </p>
+
+        <h2>4. Uso permitido</h2>
+        <p>
+          É permitido acessar, ler e compartilhar links para fins pessoais e não comerciais. É vedado o uso que viole
+          lei brasileira, direitos de terceiros, propriedade intelectual, ou que sobrecarregue sistemas (incluindo
+          coleta automatizada não autorizada).
+        </p>
+
+        <h2>5. Propriedade intelectual</h2>
+        <p>
+          Textos originais, diagramação, marca e elementos visuais do portal são protegidos. Citações breves com
+          indicação de fonte são permitidas; reprodução ampla depende de autorização prévia. Marcas de terceiros
+          citadas pertencem aos respectivos titulares.
+        </p>
+
+        <h2>6. Isenção de garantias</h2>
+        <p>
+          O conteúdo é fornecido “no estado em que se encontra”, sem garantia de adequação a caso concreto,
+          atualização permanente ou ausência de erros. Decisões com base no material são de sua exclusiva
+          responsabilidade.
+        </p>
+
+        <h2>7. Links externos</h2>
+        <p>
+          Links para sites de terceiros são apenas conveniência. Não controlamos esses sites nem seus termos e políticas
+          de privacidade.
+        </p>
+
+        <h2>8. Privacidade</h2>
+        <p>
+          O tratamento de dados pessoais segue a <a href="privacidade.html">Política de Privacidade</a>, estruturada em
+          conformidade com a LGPD. Coletamos o mínimo necessário; não coletamos dados financeiros por este portal.
+        </p>
+
+        <h2>9. Alterações</h2>
+        <p>
+          Podemos alterar estes termos a qualquer tempo, com publicação da versão revisida nesta URL. O uso continuado
+          após alterações constitui ciência das mudanças.
+        </p>
+
+        <h2>10. Foro e lei aplicável</h2>
+        <p>
+          Aplica-se a legislação da República Federativa do Brasil. Em relações de consumo, é competente o foro do
+          domicílio do consumidor; nos demais casos, fica eleito o foro da comarca de São Paulo/SP, sem prejuízo de
+          disposição legal diversa.
+        </p>
+
+        <p><strong>Última atualização:</strong> maio de 2026.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__grid">
+        <div>
+          <h2 class="footer__title" data-bind="meta.nomePortal"></h2>
+          <p class="footer__tagline" data-bind="meta.slogan"></p>
+          <p class="footer__legal">
+            <strong data-bind="empresa.razaoSocial"></strong><br />
+            CNPJ <span data-bind="empresa.cnpj"></span><br />
+            <span data-bind="empresa.enderecoLinha1"></span><br />
+            <span data-bind="empresa.enderecoLinha2"></span><br />
+            <a data-mailto="empresa.emailContato"><span data-bind="empresa.emailContato"></span></a>
+            · <a data-mailto="empresa.emailPrivacidade">Privacidade (e-mail)</a><br />
+            Tel. <span data-bind="empresa.telefone"></span> · Desde <span data-bind="empresa.anoFundacao"></span>
+          </p>
+        </div>
+        <div>
+          <h3 class="footer__subtitle">Mapa do site</h3>
+          <ul class="footer__list footer__list--plain">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="privacidade.html">Privacidade</a></li>
+            <li><a href="termos.html">Termos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="cookies.html">Política de Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__subtitle" data-bind="transparencia.tituloFaixa"></h3>
+          <ul class="footer__list" data-transparencia-footer></ul>
+        </div>
+      </div>
+      <p class="footer__bottom">
+        © <span data-year></span> <span data-bind="empresa.nomeFantasia"></span>. Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <script src="js/site.config.js"></script>
+    <script src="js/site.js"></script>
+  </body>
+</html>
